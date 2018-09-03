@@ -13,7 +13,7 @@ function driverNamesWithRevenueOver(drivers, revenue) {
 
 
 
-function attributeFilter(driver) {
+function attributeFilter() {
   console.log("attributeFilter == key --" + key );
   if (driver.hasOwnProperty('key') && driver['key'] === value) {
     return driver;
@@ -21,7 +21,7 @@ function attributeFilter(driver) {
 }
 
 function exactMatch(drivers, {key: value}) {
-  return drivers.filter(attributeFilter());
+  return drivers.filter(attributeFilter;
 }
 
 exactMatch(drivers, { name: 'Sally' });
