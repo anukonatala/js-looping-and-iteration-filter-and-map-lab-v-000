@@ -14,7 +14,6 @@ function driverNamesWithRevenueOver(drivers, revenue) {
 
 
 function attributeFilter() {
-  console.log("attributeFilter == key --" + key );
   if (driver.hasOwnProperty('key') && driver['key'] === value) {
     return driver;
   }
