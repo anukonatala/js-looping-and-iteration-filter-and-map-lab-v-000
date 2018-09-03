@@ -42,5 +42,3 @@ function exactMatchToList(drivers, matcher){
       return driver.name
     })
 }
-
-// exactMatch(drivers, { name: 'Sally' });
