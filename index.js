@@ -27,10 +27,10 @@ function exactMatch (drivers, {key: value}) {
   return drivers.filter(function (driver) {
 
 
-    for (const key in matcher) {
+    // for (const key in matcher) {
       
-      matches = driver[key] === matcher[key];
-    }
+      matches = driver[key] === value;
+    // }
 
     return matches;
   });
