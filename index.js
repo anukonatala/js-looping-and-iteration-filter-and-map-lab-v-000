@@ -13,14 +13,27 @@ function driverNamesWithRevenueOver(drivers, revenue) {
 
 
 
-function attributeFilter() {
-  if (driver.hasOwnProperty('key') && driver['key'] === value) {
-    return driver;
-  }
-}
+// function attributeFilter() {
+//   if (driver.hasOwnProperty('key') && driver['key'] === value) {
+//     return driver;
+//   }
+// }
 
-function exactMatch(drivers, {key: value}) {
-  return drivers.filter(attributeFilter);
+// function exactMatch(drivers, {key: value}) {
+//   return drivers.filter(attributeFilter);
+// }
+
+function exactMatch (drivers, matcher) {
+  return drivers.filter(function (driver) {
+
+
+    for (const key in matcher) {
+      
+      matches = driver[key] === matcher[key];
+    }
+
+    return matches;
+  });
 }
 
 // exactMatch(drivers, { name: 'Sally' });
