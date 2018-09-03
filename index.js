@@ -29,3 +29,5 @@ function attributeFilter() {
 function exactMatch(drivers, {key: value}) {
   return drivers.filter(attributeFilter());
 }
+
+exactMatch(drivers, { name: 'Sally' });
