@@ -11,12 +11,6 @@ function driverNamesWithRevenueOver(drivers, revenue) {
     return driver.revenue > parseInt(revenue)}).map(function(driver) {return driver.name});
 }
 
-drivers =[];
-drivers.push(
-      { name: 'Sally',   revenue: 400 },
-      { name: 'Annette', revenue: 200 },
-      { name: 'Jim',     revenue: 150 }
-    );
 
 
 function attributeFilter(driver) {
